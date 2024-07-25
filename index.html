@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<hr>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" height="100px" width="170px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Resume">Resume</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="text"><u><i>AIML Student</i></u></p>
+                <h1 class="text">Hi, I'm <span>Saikiran</span> <i>From</i><br>SVS Group of Instutions</h1>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- -----------about-------------- -->
+    <div class="total">
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="user2.png" width="300px" height="350px">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm currently pursuing a Bachelor of Technology in Artificial
+                            Intelligence and Machine Learning (AIML) at SVS Group of Institutions
+                            in Bheemaram, Hanamkonda. <br>With a solid foundation in frontend
+                            development, I am skilled in HTML, CSS, and JavaScript.
+                            Additionally, I have a strong command of Python,
+                            a crucial language in the field of data science.<br>
+                            Driven by a passion for data and a keen analytical mind,
+                            I'm actively focusing on achieving my goal of becoming a
+                            Data Scientist.</p><br>
+                        <br>
+                        <div class="tab-titles"><span>
+                                <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab(event,'projects')">Projects</p>
+                                <p class="tab-links" onclick="opentab(event,'education')">Education</p>
+                            </span>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>
+                                        <h3>Web Development</h3>
+                                    </span>(Html,Css,JS)</li>
+                                <li><span>
+                                        <h3>Python</h3>
+                                    </span></li>
+                                <li><span>
+                                        <h3>SQL </h3>
+                                    </span></li>
+                                <li><span>
+                                        <h3>Natural Language Processing</h3>
+                                    </span> (NLP)</li>
+                                <li><span>
+                                        <h3>Power BI</h3>
+                                    </span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects">
+
+                            <ul>
+                                <li><span>
+                                        <h3>Chatbot creation</h3>
+                                    </span>by using NLP</li>
+                                <li><span>
+                                        <h3>E-Commerce website</h3>
+                                    </span></li>
+                                <li><span>
+                                        <h3>Portfolio Website</h3>
+                                    </span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>
+                                        <h4>2021 -2025</h4>
+                                    </span>Bachelor of Technology from SVS Group of Instutions ,Bheemaram, Hanamkonda,
+                                    Warangal</li>
+                                <li><span>
+                                        <h4>2018 - 2020</h4>
+                                    </span>Intermediate from Balaji Group of Instutions ,Narsampet,warangal</li>
+                                <li><span>
+                                        <h4>2018</h4>
+                                    </span>SSC From Telangana Model School, Ameenabad, Chennaroapet, Warangal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- -----------Resume-------------- -->
+        <div id="Resume">
+            <div>
+                <h1 class="resume-title"><i><u>Resume</u></i></h1><br>
+                <div class="container-resume">
+                    <header>
+                        <img src="resume.png" alt="Photo of Saikiran" class="profile-photo">
+                        <h1>Saikiran</h1>
+                        <p>BTech in AIML</p>
+                        <p>SVS Group of Institutions, Bheemaram, Hanmakonda, Warangal</p>
+
+                    </header>
+                    <section>
+                        <h2>Contact Information</h2>
+                        <p>Email: saikiranburra123@gmail.com</p>
+                        <p>Phone: 9908521180</p>
+                        <p>Address: Lingagiri, Warangal, Telangana, 506122</p>
+                    </section>
+                    <section>
+                        <h2>Education</h2>
+                        <p>Bachelor of Technology in Artificial Intelligence and Machine Learning(AIML)</p>
+                        <p>SVS Group of Institutions, Bheemaram, Hanmakonda, Warangal</p>
+                        <p>Expected Graduation: 2025</p>
+                    </section>
+                    <section>
+                        <h2>Projects</h2><br>
+                        <a href="">Chatbot</a><br><br>
+                        <a href="">E-Commerce</a><br><br>
+                        <a href="">Portfolio</a>
+                    </section>
+                    <section>
+                        <h2>Skills</h2>
+                        <p>HTML<br>CSS<br>JavaScript<br>Python<br>
+                            Natural Language Processing(NLP)</p>
+                    </section>
+                    <section>
+                        <h2>Hobbies</h2>
+                        <p>Watching movies</p>
+                        <p>Reading books</p>
+                        <p>Listening to music</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- -----------Projects-------------- -->
+        <div id="Projects">
+            <div>
+                <h1 class="pro-title"><i><u>Projects</u></i></h1><br>
+                <div class="word-list">
+                    <a href="https://www.youtube.com/@mrakshit4851" class="image-link" target="_blank">
+                        <img src="resume2.png" alt="Clickable Image">
+                    </a>
+                    <a href="https://www.example.com" class="image-link" target="_blank">
+                        <img src="resume2.png" alt="Clickable Image">
+                    </a>
+                    <a href="https://www.example.com" class="image-link" target="_blank">
+                        <img src="resume2.png" alt="Clickable Image">
+                    </a>
+                    <div class="hidden-images">
+                        <a href="https://www.example.com" class="image-link" target="_blank">
+                            <img src="resume2.png" alt="Clickable Image">
+                        </a>
+                        <a href="https://www.example.com" class="image-link" target="_blank">
+                            <img src="resume2.png" alt="Clickable Image">
+                        </a>
+
+                    </div>
+                </div>
+                <button id="see-more-btn">See More</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('see-more-btn').addEventListener('click', function () {
+            const hiddenImages = document.querySelector('.hidden-images');
+            hiddenImages.style.display = 'flex';
+            this.style.display = 'none';
+        });</script>
+
+    <hr>
+    <!-- -----------contact-------------- -->
+    <div id="contact" class="container-contact">
+        <div class="row">
+            <div class="about-col-one">
+                <div class="about-col-3">
+                    <h1 class="contact-me"><u>Contact Me</u></h1>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h5>saikiranburra123@gmail.com</h5>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h5>99XXXXXXXX80</h5>
+                    </div><br><br><br>
+                    <div class="social-icons">
+                        <a class="youtube" href="https://facebook.com" target="_blank"><i class="fab fa-facebook"
+                                style="color:#3b5998;"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"
+                                style="color:#E1306C;"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"
+                                style="color:#0e76a8"></i></a>
+                        <a href="https://wattsapp.com" target="_blank"><i class="fab fa-whatsapp"
+                                style="color:#25D366"></i></a>
+                        <a class="youtube" href="https://youtube.com" target="_blank"><i class="fab fa-youtube"
+                                style="color: red"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-col-2">
+                <div class="about-col-4">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span><br><br>
+                    <button type="download" class="cv">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyptvzB45FUFeVweLaOwTJ--cQ5kS3NpuZRltVYYtJzE_F1YlSr3Pzr7Wkf-dpXF8RmuQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+       })
+      </script>
+
+    <script>
+        // Custom remove method definition
+        DOMTokenList.prototype.customRemove = function (className) {
+            if (this.contains(className)) {
+                this.remove(className);
+            } else {
+                console.warn();
+            }
+        };
+
+        // Custom add method definition
+        DOMTokenList.prototype.customAdd = function (className) {
+            if (!this.contains(className)) {
+                this.add(className);
+            } else {
+                console.warn();
+            }
+        };
+
+        // Use custom methods in your script
+        function opentab(event, tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            // Check if tablinks and tabcontents are correctly populated
+            if (!tablinks.length || !tabcontents.length) {
+                console.error("Tab links or tab contents not found");
+                return;
+            }
+
+            console.log('tablinks:', tablinks);
+            console.log('tabcontents:', tabcontents);
+
+            for (let tablink of tablinks) {
+                if (tablink && tablink.classList && typeof tablink.classList.customRemove === 'function') {
+                    console.log('Removing active-link from:', tablink);
+                    tablink.classList.customRemove("active-link");
+                } else {
+                    console.error("Undefined or invalid tablink:", tablink);
+                }
+            }
+            for (let tabcontent of tabcontents) {
+                if (tabcontent && tabcontent.classList && typeof tabcontent.classList.customRemove === 'function') {
+                    console.log('Removing active-tab from:', tabcontent);
+                    tabcontent.classList.customRemove("active-tab");
+                } else {
+                    console.error("Undefined or invalid tabcontent:", tabcontent);
+                }
+            }
+            console.log('Adding active-link to:', event.currentTarget);
+            if (event.currentTarget && event.currentTarget.classList && typeof event.currentTarget.classList.customAdd === 'function') {
+                event.currentTarget.classList.customAdd("active-link");
+            } else {
+                console.error("Undefined or invalid event.currentTarget:", event.currentTarget);
+            }
+
+            var activeTab = document.getElementById(tabname);
+            if (activeTab && activeTab.classList && typeof activeTab.classList.customAdd === 'function') {
+                console.log('Adding active-tab to:', activeTab);
+                activeTab.classList.customAdd("active-tab");
+            } else {
+                console.error("Undefined or invalid tab with id:", tabname);
+            }
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
+    </script>
+</body>
+
+</html>
